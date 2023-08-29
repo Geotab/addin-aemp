@@ -31,7 +31,7 @@ ul.checkmateListTable li.notActive div a div span span.secondaryData.email {
     color:#25477b;
 }
 
-#legends {
+.legends {
     font-weight: 700;
     color: #25477b;
     fill: #25477b;
@@ -43,8 +43,6 @@ ul.checkmateListTable li.notActive div a div span span.secondaryData.email {
     position: absolute;
     margin-left: 185px;
     margin-top: -27px;
-    /* top: 18px;
-    right: 18px; */
     text-align: center;
     background-color: gray;
     border-radius: 50%;
@@ -67,9 +65,6 @@ ul.checkmateListTable li.notActive div a div span span.secondaryData.email {
     visibility: visible;
     opacity: 0.75;
     transform-origin: 100% 0%;
-/* 
-    -webkit-animation: fadeIn 0.3s ease-in-out;
-    animation: fadeIn 0.3s ease-in-out; */
 }
 
 .help-tip p{    /* The tooltip */

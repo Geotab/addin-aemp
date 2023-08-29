@@ -1,105 +1,81 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AEMP Add-In</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="scripts/main.js"></script>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AEMP Add-In</title>
-
-  
-  <!-- build:css styles/vendor.css -->
-  <!-- bower:css -->
-  <!-- endbower -->
-  <!-- endbuild -->
-
-  <!-- build:css styles/main.css -->
-  <link rel="stylesheet" href="styles/main.css">
-  <!-- endbuild -->
-
-  <!-- build:js scripts/vendor.js -->
-  <!-- bower:js -->
-  <!-- endbower -->
-  <!-- endbuild -->
-
-  <!-- build:js scripts/main.js -->
-  <script src="scripts/main.js"></script>
-  <!-- endbuild -->
-  
-</head>
-
-<body>
-
-  <div id="aEMPFormat" class="hidden">
-    
-        <header class="geotabPageHeader">
-          <h1 class="geotabPageName">AEMP Add-in <span class="subdued">
+  <body>
+    <div id="aEMPFormat" class="hidden">
+      <header class="geotabPageHeader">
+        <h1 class="geotabPageName">
+          AEMP Add-in
+          <span class="subdued">
             <div class="help-tip">
-                  <p>This Add-In enables the users to download device data in AEMP format. <br>
-                      Select the  devices and click the Download button to export the device data as an XML file.</p>
+              <p>
+                This Add-In enables the users to download device data in AEMP
+                format. <br />
+                Select the devices and click the Download button to export the
+                device data as an XML file.
+              </p>
             </div>
-          </span></h1>
-
-
-
-          <!-- <div class="pageNameSecondary">
-            <h2 class="geotabSecondaryTitle"> <span id="aEMPFormat-user">
-
-            </span>
-         </h2> -->
-          </div>
-
-
-
-        </header>
-    
-  </div>
-
-  
-  <div class='fullpage'>  
-
-
-      <div class="box">
-         <div id="margin">
-            <fieldset class="inset">
-               <legend id="legends" >Select Date and Time</legend>
-               <!-- <label for="datetime" class="center" style="display: inline-block;">Select Date and Time</label> -->
-               <input id="datetime" type="datetime-local"  style="display: inline-block;" class="geotabFormEditField leftAlign" />
-               <!-- <div href="#" id="aemp-download" class="geotabButton">Download</div> -->
-            </fieldset>
-         </div>
+          </span>
+        </h1>
+      </header>
     </div>
 
-         
+    <div class="fullpage">
       <div class="box">
-         <div id="margin">
-            <fieldset class="inset">
-            <legend id="legends" >Select Vehicles</legend>
+        <div>
+          <fieldset class="inset">
+            <legend class="legends">Select Date and Time</legend>
+            <input
+              id="datetime"
+              type="datetime-local"
+              style="display: inline-block"
+              class="geotabFormEditField leftAlign"
+            />
+          </fieldset>
+        </div>
+      </div>
+
+      <div class="box">
+        <div>
+          <fieldset class="inset">
+            <legend class="legends">Select Vehicles</legend>
             <div class="">
-               <input id="vehicleSearch"   type="search" placeholder="Search vehicles. . ." class="geotabFormEditField"/>
-               <input type="checkbox"  id="selectAll" class="geotabSwitchButton" >
-               <label class="geotabButton" for="selectAll">Select All</label>
+              <input
+                id="vehicleSearch"
+                type="search"
+                placeholder="Search vehicles. . ."
+                class="geotabFormEditField"
+              />
+              <input
+                type="checkbox"
+                id="selectAll"
+                class="geotabSwitchButton"
+              />
+              <label class="geotabButton" for="selectAll">Select All</label>
             </div>
-         
+
             <div id="listBuild" class="checkmateListBuilder">
-               <ul class="checkmateListTable" id="vehicleList">
-               </ul>
+              <ul class="checkmateListTable" id="vehicleList"></ul>
             </div>
-         </fieldset>
-         </div>
+          </fieldset>
+        </div>
       </div>
 
       <div class="box">
-         <fieldset class="inset">
-            <legend id="legends" >Download</legend>
-            <button id="aemp-submit" class="geotabButton">Download</button>
-         </fieldset>
+        <fieldset class="inset">
+          <legend class="legends">Download</legend>
+          <button id="aemp-submit" class="geotabButton">Download</button>
+        </fieldset>
       </div>
-   </div>
-
- 
-
-</body>
-
+    </div>
+  </body>
 </html>

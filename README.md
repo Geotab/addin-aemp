@@ -6,6 +6,16 @@ Add the configuration below to the System Settings > Add-Ins section of the MyGe
 
 ```json
 {
-	"url": "https://app.geotab.com/addins/geotab/aemp/1.0.1/config.json"
+	"name": "AEMP Add-In",
+	"supportEmail": "integrations@geotab.com",
+	"version": "1.0.2",
+	"items": [{
+		"url": "https://cdn.jsdelivr.net/gh/Geotab/addin-aemp@master/app/AEMPFormat.html",
+		"path": "EngineMaintenanceLink/",
+		"menuName": {
+			"en": "AEMP Add-In"
+		},
+		"icon": "https://cdn.jsdelivr.net/gh/Geotab/addin-aemp@master/app/images/icon.svg"
+	}],
 }
 ```
