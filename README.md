@@ -16,6 +16,6 @@ Add the configuration below to the System Settings > Add-Ins section of the MyGe
 			"en": "AEMP Add-In"
 		},
 		"icon": "https://cdn.jsdelivr.net/gh/Geotab/addin-aemp@master/app/images/icon.svg"
-	}],
+	}]
 }
 ```
