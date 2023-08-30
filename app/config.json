@@ -1,3 +1,13 @@
 {
-	"url": "https://app.geotab.com/addins/geotab/aemp/1.0.1/config.json"
+	"name": "AEMP Add-In",
+	"supportEmail": "integrations@geotab.com",
+	"version": "1.0.2",
+	"items": [{
+		"url": "./AEMPFormat.html",
+		"path": "EngineMaintenanceLink/",
+		"menuName": {
+			"en": "AEMP Add-In"
+		},
+		"icon": "./images/icon.svg"
+	}]
 }
